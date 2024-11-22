@@ -14,7 +14,7 @@ const leer = () => {
     JSON.parse(`[${citas.join(',')}]`).forEach(cita => {console.log(cita); });};
 
 const vaciar = () => {
-    fs.writeFileSync('citas.json', "[]"); 
+    fs.writeFileSync('citas.json', "[]\n"); 
     console.log("Todas las citas han sido eliminadas.");};
 
 module.exports = { registrar, leer, vaciar };
